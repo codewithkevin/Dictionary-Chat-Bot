@@ -1,19 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JOKE CHAT</title>
-    <link rel="stylesheet" href="public/style/style.css">
+    <head>
+        <meta charset="utf-8" />
+ 
+        <title>Tuts+ Chat Application</title>
+        <meta name="description" content="CHAT BOT"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="menu">
+                <p class="welcome">Welcome, <b></b></p>
+                <p class="logout"><a id="exit" href="#">Exit Chat</a></p>
+            </div>
+ 
+            <div id="chatbox">
 
-</head>
-<body>
-    
+                <ul class="chatbox-list">
+
+                </ul>
+
+
+                <ul class="computer-reply">
+
+
+                </ul>
+
+            </div>
+ 
+            <form name="message" action="">
+                <input name="usermsg" class="bot-input" type="text" id="usermsg" />
+                <button class="chat-button">
+                    send
+                </button>
+            </form>
+        </div>
 
 
 
 
-    <script src="public/script/script.js"></script>
-</body>
+
+        
+        <script src="./script.js"></script>
+    </body>
 </html>
