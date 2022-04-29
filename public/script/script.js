@@ -11,6 +11,7 @@ button.addEventListener("click", chatbot);
 
 
 //Logic Functions
+
 // function displayJoke(){    
     
 //     const baseURL = "https://v2.jokeapi.dev/joke/";
@@ -55,6 +56,7 @@ button.addEventListener("click", chatbot);
 
 
 //Function
+
 function chatbot(event) {
     event.preventDefault();
 
