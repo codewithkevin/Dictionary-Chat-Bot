@@ -7,9 +7,7 @@ body {
     margin: 0px auto;
     font-weight: 300;
     color: #000000;
-    display: fixed;
-    height: fixed;
-    width: fixed;
+    position: fixed;
 }
 
 form {
