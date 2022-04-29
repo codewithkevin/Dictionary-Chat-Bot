@@ -103,7 +103,7 @@ border-bottom: 4px solid #a7a7a7;
 }
 
 .chat-button {
-    background: #55c783;
+    background: dodgerblue linear-gradient(22deg, aqua, dodgerblue, deeppink) fixed;
     border-radius: 2px;
     border: 1px solid #55c783;
     color: white;
