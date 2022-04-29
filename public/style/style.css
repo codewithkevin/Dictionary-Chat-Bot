@@ -54,19 +54,19 @@ font-weight: bold;
 }
 
 #chatbox {
-text-align: left;
-margin: 0 auto;
-margin-bottom: 25px;
-padding: 10px;
-background: #fff;
-font-weight: bolder;
-color: #000;
-height: 77vh;
-width: 100%;
-border: 1px solid #000000;
-overflow: auto;
-border-radius: 4px;
-border-bottom: 4px solid #a7a7a7;
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 10px;
+    background: #fff;
+    font-weight: bolder;
+    color: #000;
+    height: 77vh;
+    width: 100%;
+    border: 1px solid #000000;
+    overflow: auto;
+    border-radius: 4px;
+    border-bottom: 4px solid #a7a7a7;
 }
 
 #chatbox .box-bundle {
@@ -143,3 +143,14 @@ border-bottom: 4px solid #a7a7a7;
     font-weight: bold;
 }
 
+.dark-mode #chatbox {
+    background: #0b0a14;
+}
+
+.dark-mode .content h3 {
+    color: #f7f0e9;
+}
+
+.dark-mode .content p {
+    color: #f7f0e9;
+}
