@@ -1,17 +1,25 @@
+
+/*CS Skeleton */
 * {
     margin: 0;
     padding: 0;
 }
 
+/*List Skeleton*/
+
 li {
     list-style: none;
 }
+
+/*Body Skeleton*/
 
 body {
     margin: 0px auto;
     font-weight: 300;
     color: #0a0137;
 }
+
+/*Form Skeleton*/
 
 form {
     padding: 5px 25px;
@@ -21,37 +29,44 @@ form {
     justify-content: center;
 }
 
-
-a {
-    color: #0000ff;
-    text-decoration: none;
+#usermsg {
+    flex: 1;
+    border-radius: 4px;
+    border: 1px solid #55c783;
+    padding: .2rem .5rem .5rem;
 }
 
-a:hover {
-text-decoration: underline;
+.chat-button {
+    background: dodgerblue linear-gradient(22deg, aqua, dodgerblue, deeppink) fixed;
+    border-radius: 2px;
+    border: 1px solid #55c783;
+    color: white;
+    padding: .1rem .3rem .5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 20%;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
 }
 
-#wrapper,
-#loginform {
+.chat-button:hover {
+    background: #894ee8;
+    color: black;
+}
+
+
+
+/*Container Skeleton*/
+#wrapper{
 margin: 0 auto;
 padding-bottom: 25px;
 background: #eee;
 width: 100%;
-/* max-width: 100%; */
-/* border: 2px solid #212121; */
 border-radius: 4px;
 }
 
-#loginform {
-padding-top: 18px;
-text-align: center;
-}
-
-#loginform p {
-padding: 15px 25px;
-font-size: 1.4rem;
-font-weight: bold;
-}
+/*Chatbox Skeleton*/
 
 #chatbox {
     text-align: left;
@@ -99,32 +114,7 @@ font-weight: bold;
     color: white;
 }
 
-#usermsg {
-    flex: 1;
-    border-radius: 4px;
-    border: 1px solid #55c783;
-    padding: .2rem .5rem .5rem;
-}
-
-.chat-button {
-    background: dodgerblue linear-gradient(22deg, aqua, dodgerblue, deeppink) fixed;
-    border-radius: 2px;
-    border: 1px solid #55c783;
-    color: white;
-    padding: .1rem .3rem .5rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    width: 20%;
-    margin: 0 auto;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-    transform: translateY(-2px);
-}
-
-.chat-button:hover {
-    background: #894ee8;
-    color: black;
-}
-
+/*Menu Skeleton*/
 #menu {
     padding: 10px 20px;
     display: flex;
@@ -135,6 +125,7 @@ font-weight: bold;
     
 }
 
+/*Darkmode Skeleton*/
 .darkmode {
     background: #012549;
     color: white;
