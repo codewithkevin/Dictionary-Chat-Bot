@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
 * {
 margin: 0;
@@ -8,7 +8,7 @@ padding: 0;
 
 body {
 margin: 0px auto;
-font-family: "Lato";
+font-family: 'Poppins', sans-serif;;
 font-weight: 300;
 }
 
@@ -19,9 +19,6 @@ gap: 20px;
 justify-content: center;
 }
 
-input {
-
-}
 
 a {
 color: #0000ff;
@@ -120,16 +117,8 @@ border-bottom: 4px solid #a7a7a7;
 }
 
 .chat-button:hover {
-    background: #85bcff;
-    border-radius: 2px;
-    border: 1px solid #55c783;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: bold;
-    width: fit-content;
-    margin: 0 auto;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-    transform: translateY(-2px);
+    background: #894ee8;
+    color: black;
 }
 
 #menu {
