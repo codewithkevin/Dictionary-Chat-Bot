@@ -17,13 +17,8 @@ gap: 20px;
 justify-content: center;
 }
 
-form label {
-font-size: 1.5rem;
-font-weight: bold;
-}
-
 input {
-font-family: "Lato";
+
 }
 
 a {
@@ -63,9 +58,9 @@ margin: 0 auto;
 margin-bottom: 25px;
 padding: 10px;
 background: #fff;
-height: 70vh;
+height: 77vh;
 width: 100%;
-border: 1px solid #a7a7a7;
+border: 1px solid #000000;
 overflow: auto;
 border-radius: 4px;
 border-bottom: 4px solid #a7a7a7;
@@ -73,8 +68,7 @@ border-bottom: 4px solid #a7a7a7;
 
 #chatbox .box-bundle {
   appearance: none;
-  background-color: #000000;
-  border: 2px solid #1A1A1A;
+  background: dodgerblue linear-gradient(22deg, aqua, dodgerblue, deeppink) fixed;
   border-radius: 15px;
   box-sizing: border-box;
   cursor: pointer;
@@ -105,27 +99,34 @@ border-bottom: 4px solid #a7a7a7;
 #usermsg {
     flex: 1;
     border-radius: 4px;
-    border: 1px solid #ff9800;
+    border: 1px solid #55c783;
+    padding: .2rem .5rem .5rem;
 }
 
-#name {
-border-radius: 4px;
-border: 1px solid #ff9800;
-padding: 2px 8px;
+.chat-button {
+    background: #55c783;
+    border-radius: 2px;
+    border: 1px solid #55c783;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: fit-content;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
 }
 
-#submitmsg,
-#enter{
-background: #ff9800;
-border: 2px solid #e65100;
-color: white;
-padding: 4px 10px;
-font-weight: bold;
-border-radius: 4px;
-}
-
-.error {
-color: #ff0000;
+.chat-button:hover {
+    background: #85bcff;
+    border-radius: 2px;
+    border: 1px solid #55c783;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: fit-content;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
 }
 
 #menu {
@@ -137,7 +138,7 @@ display: flex;
 flex: 1;
 }
 
-a#exit {
+#exit {
 color: white;
 background: #c62828;
 padding: 4px 8px;
@@ -145,30 +146,3 @@ border-radius: 4px;
 font-weight: bold;
 }
 
-.msgln {
-margin: 0 0 5px 0;
-}
-
-.msgln span.left-info {
-color: orangered;
-}
-
-.msgln span.chat-time {
-color: #666;
-font-size: 60%;
-vertical-align: super;
-}
-
-.msgln b.user-name, .msgln b.user-name-left {
-font-weight: bold;
-background: #546e7a;
-color: white;
-padding: 2px 4px;
-font-size: 90%;
-border-radius: 4px;
-margin: 0 5px 0 0;
-}
-
-.msgln b.user-name-left {
-background: orangered;
-}

@@ -58,6 +58,9 @@ button.addEventListener("click", chatbot);
 function chatbot(event) {
     event.preventDefault();
 
+    //Remove Rule 
+    displayrule.remove();
+
     //Computer Logic 
     const baseURL = "https://v2.jokeapi.dev/joke/";
     const categories = ["Programming", "Misc", "Pun"];
