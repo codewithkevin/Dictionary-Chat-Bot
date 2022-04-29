@@ -158,21 +158,24 @@ font-weight: bold;
 
 .chat-item {
     padding: 5px;
-    margin: 5px;
     border-radius: 5px;
     background: #ccc;
     color: rgb(0, 0, 0);  
     width: fit-content;
     float: right;
     font-weight: 900;
+    margin: 20px auto;
+    margin-right: 25px;
 }
+
 
 .reply-item {
     padding: 5px;
-    margin: 5px;
     border-radius: 5px;
     background: #ccc;
     color: #000000;
     width: fit-content;
     float: left;
+    margin: 20px auto;
+    margin-right: 25px;
 }
