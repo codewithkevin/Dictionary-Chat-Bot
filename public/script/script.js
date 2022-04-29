@@ -3,6 +3,7 @@ const input = document.querySelector(".bot-input")
 const button = document.querySelector(".chat-button")
 const list = document.querySelector(".chatbox-list")
 const reply = document.querySelector(".computer-reply")
+const displayrule = document.querySelector(".box-bundle");
 
 //Event Listeners 
 button.addEventListener("click", chatbot);
