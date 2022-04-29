@@ -147,6 +147,14 @@ border-radius: 4px;
     color: white;
 }
 
+.dark-mode .chat-item {
+    background: #3f9342;
+}
+
+.dark-mode .reply-item {
+    background: gray;
+}
+
 /*Chat-Containers Skeleton*/
 
 .chat-item {
@@ -159,15 +167,16 @@ border-radius: 4px;
     font-weight: 900;
     margin: 20px auto;
     margin-right: 25px;
+    
 }
 
 
 .reply-item {
-    padding: 5px;
+    padding: 5px 5px 5px 10px;
     border-radius: 5px;
     background: #ccc;
     color: #000000;
-    width: fit-content;
+    width: 350px;
     float: left;
     margin: 20px auto;
     margin-right: 25px;
