@@ -4,6 +4,7 @@ const button = document.querySelector(".chat-button")
 const list = document.querySelector(".chatbox-list")
 const reply = document.querySelector(".computer-reply")
 const displayrule = document.querySelector(".box-bundle");
+const dark = document.querySelector(".dark-mode");
 
 //Event Listeners 
 button.addEventListener("click", chatbot);
