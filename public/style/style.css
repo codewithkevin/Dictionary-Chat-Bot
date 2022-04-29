@@ -156,3 +156,20 @@ font-weight: bold;
     color: white;
 }
 
+.chat-item {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    background: #0b0a14;
+    color: white;  
+    width: fit-content;
+}
+
+.reply-item {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    background: #0b0a14;
+    color: #f7f0e9;
+    width: fit-content;
+}

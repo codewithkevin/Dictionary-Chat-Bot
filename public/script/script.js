@@ -46,7 +46,7 @@ function chatbot(event) {
                 //Computer Reply
                     const newreply = document.createElement("li");
                     newreply.innerHTML = randomJoke.joke;
-                    newreply.classList.add("chat-item")
+                    newreply.classList.add("reply-item")
                     chatdiv.appendChild(newreply);
                  
             }
@@ -55,7 +55,7 @@ function chatbot(event) {
                 //Computer Reply
                 const newreply = document.createElement("li");
                 newreply.innerHTML = randomJoke.setup + "<br>" + randomJoke.delivery;
-                newreply.classList.add("chat-item")
+                newreply.classList.add("reply-item")
                 chatdiv.appendChild(newreply);
             }
         }
