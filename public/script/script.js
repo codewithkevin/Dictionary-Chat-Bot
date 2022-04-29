@@ -5,12 +5,11 @@ const list = document.querySelector(".chatbox-list")
 const reply = document.querySelector(".computer-reply")
 
 //Event Listeners 
-
 button.addEventListener("click", chatbot);
 
 
 
-//User Function
+//Function
 function chatbot(event) {
     event.preventDefault();
 
@@ -34,3 +33,4 @@ function chatbot(event) {
     list.appendChild(chatdiv)
 }
 
+//Logic Functions 
