@@ -135,7 +135,7 @@ font-weight: bold;
     
 }
 
-.dark-button {
+.darkmode {
     background: #012549;
     color: white;
     padding: 1px 4px;
@@ -147,10 +147,8 @@ font-weight: bold;
     background: #0b0a14;
 }
 
-.dark-mode .content h3 {
+.dark-mode #menu {
     color: #f7f0e9;
+    background-color: #000;
 }
 
-.dark-mode .content p {
-    color: #f7f0e9;
-}
