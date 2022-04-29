@@ -90,9 +90,6 @@ function chatbot(event) {
             }
             else
             {
-                // If type == "single", the joke only has the "joke" property
-                //  randomJoke.setup + "<br>" + randomJoke.delivery;
-                // par.innerHTML += randomJoke.delivery;
                 //Computer Reply
                 const newreply = document.createElement("li");
                 newreply.innerHTML = randomJoke.setup + "<br>" + randomJoke.delivery;
