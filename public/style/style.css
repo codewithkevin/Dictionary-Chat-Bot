@@ -3,10 +3,14 @@
     padding: 0;
 }
 
+li {
+    list-style: none;
+}
+
 body {
     margin: 0px auto;
     font-weight: 300;
-    color: #000000;
+    color: #0a0137;
 }
 
 form {
@@ -131,11 +135,11 @@ border-bottom: 4px solid #a7a7a7;
     
 }
 
-#exit {
-color: white;
-background: #c62828;
-padding: 4px 8px;
-border-radius: 4px;
-font-weight: bold;
+.dark-button {
+    background: #012549;
+    color: white;
+    padding: 1px 4px;
+    border-radius: 4px;
+    font-weight: bold;
 }
 
