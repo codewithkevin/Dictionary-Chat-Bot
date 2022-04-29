@@ -152,3 +152,7 @@ font-weight: bold;
     background-color: #000;
 }
 
+.dark-mode .chat li {
+    color: white;
+}
+
