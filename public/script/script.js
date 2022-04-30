@@ -85,8 +85,9 @@ function chatbot(event) {
     list.appendChild(chatdiv)
 }
 
-
-
+if(input.value == "start"){
+    alert("Please enter a message");
+}
 
 
 
