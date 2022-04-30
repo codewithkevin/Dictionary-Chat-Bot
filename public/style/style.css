@@ -165,7 +165,7 @@ border-radius: 4px;
     width: fit-content;
     float: right;
     font-weight: 900;
-    margin: 20px auto;
+    margin: 20px;
     margin-right: 25px;
     
 }
@@ -179,5 +179,5 @@ border-radius: 4px;
     width: 350px;
     float: left;
     margin: 20px auto;
-    margin-right: 25px;
+    margin-right: 55px;
 }
