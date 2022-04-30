@@ -16,78 +16,79 @@ button.addEventListener("click", chatbot);
 
 
 //Function to display the joke
+
+const start = "start"
+
+
 function chatbot(event) {
-    event.preventDefault();
-
-    //Remove Rule 
-    displayrule.remove();
-
-    //Computer Logic 
-    const baseURL = "https://v2.jokeapi.dev/joke/";
-    const categories = ["Programming", "Misc", "Pun"];
-    const params = [
-        "blacklistFlags=nsfw,religious,racist",
-        "idRange=0-100"
-    ];
-    const url = baseURL + categories[Math.floor(Math.random() * categories.length)] + "?" + params[Math.floor(Math.random() * params.length)];
+        event.preventDefault();
     
-
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", url, true);
-
-
-
-    xhr.onreadystatechange = function() {
-        if(xhr.readyState == 4 && xhr.status < 300) // readyState 4 means request has finished + we only want to parse the joke if the request was successful (status code lower than 300)
-        {
-            var randomJoke = JSON.parse(xhr.responseText);
+        //Remove Rule 
+        displayrule.remove();
     
-            if(randomJoke.type == "single")
+        //Computer Logic 
+        const baseURL = "https://v2.jokeapi.dev/joke/";
+        const categories = ["Programming", "Misc", "Pun"];
+        const params = [
+            "blacklistFlags=nsfw,religious,racist",
+            "idRange=0-100"
+        ];
+        const url = baseURL + categories[Math.floor(Math.random() * categories.length)] + "?" + params[Math.floor(Math.random() * params.length)];
+        
+    
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", url, true);
+    
+    
+    
+        xhr.onreadystatechange = function() {
+            if(xhr.readyState == 4 && xhr.status < 300) // readyState 4 means request has finished + we only want to parse the joke if the request was successful (status code lower than 300)
             {
-                // If type == "single", the joke only has the "joke" property
-
-                //Computer Reply
+                var randomJoke = JSON.parse(xhr.responseText);
+        
+                if(randomJoke.type == "single")
+                {
+                    // If type == "single", the joke only has the "joke" property
+    
+                    //Computer Reply
+                        const newreply = document.createElement("li");
+                        newreply.innerHTML = randomJoke.joke;
+                        newreply.classList.add("reply-item")
+                        chatdiv.appendChild(newreply);
+                     
+                }
+                else
+                {
+                    //Computer Reply
                     const newreply = document.createElement("li");
-                    newreply.innerHTML = randomJoke.joke;
+                    newreply.innerHTML = randomJoke.setup + "<br>" + randomJoke.delivery;
                     newreply.classList.add("reply-item")
                     chatdiv.appendChild(newreply);
-                 
+                }
             }
-            else
+            else if(xhr.readyState == 4)
             {
-                //Computer Reply
-                const newreply = document.createElement("li");
-                newreply.innerHTML = randomJoke.setup + "<br>" + randomJoke.delivery;
-                newreply.classList.add("reply-item")
-                chatdiv.appendChild(newreply);
+                alert("Error while requesting joke.\n\nStatus code: " + xhr.status + "\nServer response: " + xhr.responseText);
             }
-        }
-        else if(xhr.readyState == 4)
-        {
-            alert("Error while requesting joke.\n\nStatus code: " + xhr.status + "\nServer response: " + xhr.responseText);
-        }
-    };
+        };
+        
+        xhr.send();
     
-    xhr.send();
+        //Chat Div 
+        const chatdiv = document.createElement("div");
+        chatdiv.classList.add("chat");
+    
+        //Create Li 
+        const newchat = document.createElement("li");
+        newchat.innerHTML = input.value;
+        newchat.classList.add("chat-item");
+        chatdiv.appendChild(newchat);
+    
+    
+        //Append List 
+        list.appendChild(chatdiv)
+    }
 
-    //Chat Div 
-    const chatdiv = document.createElement("div");
-    chatdiv.classList.add("chat");
-
-    //Create Li 
-    const newchat = document.createElement("li");
-    newchat.innerHTML = input.value;
-    newchat.classList.add("chat-item");
-    chatdiv.appendChild(newchat);
-
-
-    //Append List 
-    list.appendChild(chatdiv)
-}
-
-if(input.value == "start"){
-    alert("Please enter a message");
-}
 
 
 
