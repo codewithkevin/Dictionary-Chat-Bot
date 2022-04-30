@@ -126,8 +126,12 @@ border-radius: 4px;
 }
 
 /*Darkmode Skeleton*/
-body.dark {
+body.dark #chatbox {
 	background: #292C35;
+}
+
+label {
+    margin-top: 10px;
 }
 
 .checkbox {
@@ -151,7 +155,7 @@ body.dark {
 
 .label .ball {
 	background-color: #fff;
-	border-radius: 50%;
+	border-radius: 100%;
 	position: absolute;
 	top: 2px;
 	left: 2px;
