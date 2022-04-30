@@ -130,6 +130,16 @@ body.dark #chatbox {
 	background: #292C35;
 }
 
+body.dark .chat-item {
+    background-color: #313A5F;
+    color: white;
+}
+
+body.dark .reply-item{
+    background-color: #767676;
+    color: white;
+}
+
 label {
     margin-top: 10px;
 }
