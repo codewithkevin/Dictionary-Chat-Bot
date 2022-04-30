@@ -4,11 +4,9 @@ const button = document.querySelector(".chat-button")
 const list = document.querySelector(".chatbox-list")
 const reply = document.querySelector(".computer-reply")
 const displayrule = document.querySelector(".box-bundle");
-const dark = document.querySelector(".darkmode");
 
 //Event Listeners 
 button.addEventListener("click", chatbot);
-dark.addEventListener("click", darkmode);
 
 
 
@@ -83,8 +81,21 @@ function chatbot(event) {
 }
 
 //Function to Change the Dark Mode
-function darkmode(event) {
-    event.preventDefault();
-    var element = document.body
-    element.classList.toggle("dark-mode");
-}
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+});
+
+// SOCIAL PANEL JS
+const floating_btn = document.querySelector('.floating-btn');
+const close_btn = document.querySelector('.close-btn');
+const social_panel_container = document.querySelector('.social-panel-container');
+
+floating_btn.addEventListener('click', () => {
+	social_panel_container.classList.toggle('visible')
+});
+
+close_btn.addEventListener('click', () => {
+	social_panel_container.classList.remove('visible')
+});
