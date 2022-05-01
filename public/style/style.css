@@ -140,6 +140,22 @@ body.dark .reply-item{
     color: white;
 }
 
+body.dark #menu {
+    background: #292C35; 
+}
+body.dark #menu .welcome {
+    color: white;
+}
+
+body.dark #wrapper {
+    background: #292C35; 
+}
+body.dark form {
+    background: #292C35; 
+}
+
+/*Label */
+
 label {
     margin-top: 10px;
 }
