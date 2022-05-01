@@ -131,7 +131,7 @@ body.dark #chatbox {
 }
 
 body.dark .chat-item {
-    background-color: #313A5F;
+    background-color: #315f3a;
     color: white;
 }
 
@@ -153,12 +153,11 @@ body.dark #wrapper {
 body.dark form {
     background: #292C35; 
 }
-body.dark #usermsg {
+body.dark input {
     background: #292C35; 
-}
-body.dark text{
     color: white;
 }
+
 
 /*Label */
 
@@ -186,7 +185,7 @@ label {
 }
 
 .label .ball {
-	background-color: #fff;
+	background-color: dodgerblue;
 	border-radius: 100%;
 	position: absolute;
 	top: 2px;
