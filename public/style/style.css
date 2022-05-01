@@ -38,13 +38,14 @@ form {
 
 .chat-button {
     background: dodgerblue linear-gradient(22deg, aqua, dodgerblue, deeppink) fixed;
-    border-radius: 2px;
+    border-radius: 42px;
     border: 1px solid #55c783;
     color: white;
     padding: .1rem .3rem .5rem;
     font-size: 1.2rem;
     font-weight: bold;
-    width: 20%;
+    width: fit-content;
+
     margin: 0 auto;
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-2px);
@@ -81,7 +82,6 @@ border-radius: 4px;
     border: 1px solid #000000;
     overflow: auto;
     border-radius: 4px;
-    border-bottom: 4px solid #a7a7a7;
 }
 
 #chatbox .box-bundle {
@@ -185,7 +185,7 @@ label {
 }
 
 .label .ball {
-	background-color: dodgerblue;
+	background-color: white;
 	border-radius: 100%;
 	position: absolute;
 	top: 2px;
