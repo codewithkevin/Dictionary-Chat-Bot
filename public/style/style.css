@@ -153,6 +153,12 @@ body.dark #wrapper {
 body.dark form {
     background: #292C35; 
 }
+body.dark #usermsg {
+    background: #292C35; 
+}
+body.dark text{
+    color: white;
+}
 
 /*Label */
 
