@@ -5,11 +5,6 @@ const list = document.querySelector(".chatbox-list")
 const reply = document.querySelector(".computer-reply")
 const displayrule = document.querySelector(".box-bundle");
 
-//User Logic Response
-const response_list = ['joke', 'next', 'lol']
-
-const response_stop = ['stop', 'bye', 'goodbye', 'quit']
-
 //Event Listeners 
 button.addEventListener("click", chatbot);
 
