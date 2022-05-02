@@ -1,3 +1,5 @@
+//Copywrite CodewithKevin 
+
 //Selectors
 const input = document.querySelector(".bot-input")
 const button = document.querySelector(".chat-button")
