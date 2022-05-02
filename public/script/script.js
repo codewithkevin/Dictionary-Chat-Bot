@@ -91,17 +91,19 @@ const start = ['joke', 'next', 'lol']
 function chatbot(event) {
         
     event.preventDefault();
-
-    if (input.value.toLowerCase() === start) {
-        game();
-        return;
-    }
-    else {
-        //Computer Reply
-        const newreply = document.createElement("li");
-        newreply.innerHTML = "I don't understand what you mean.";
-        newreply.classList.add("reply-item")
-        chatdiv.appendChild(newreply);
+    
+    // else {
+    //     //Computer Reply
+    //     const newreply = document.createElement("li");
+    //     newreply.innerHTML = "I don't understand what you mean.";
+    //     newreply.classList.add("reply-item")
+    //     chatdiv.appendChild(newreply);
+    // }
+    for (const item in start){
+        if (input.value.toLowerCase() === start[item]) {
+            game();
+            return;
+        }
     }
     
 }
