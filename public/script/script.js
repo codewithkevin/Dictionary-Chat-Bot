@@ -10,7 +10,7 @@ button.addEventListener("click", chatbot);
 
 
 
-//Function Game logic  and display
+//Function Game logic
 function game(){
     
     //Remove Rule 
@@ -83,7 +83,7 @@ function game(){
 
 //Function to display the joke
 
-const start = "start"
+const start = ['joke', 'next', 'lol']
 
 
 function chatbot(event) {
