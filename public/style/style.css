@@ -162,6 +162,9 @@ body.dark input {
     background: #292C35; 
     color: white;
 }
+body.dark a{
+    color: white;
+}
 
 
 /*Label */
